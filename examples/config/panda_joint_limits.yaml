@@ -1,0 +1,7 @@
+# The example launch merges these fields into the packaged joint limits.
+joint_limits:
+  panda_joint1:
+    has_velocity_limits: true
+    max_velocity: 1.0
+    has_acceleration_limits: true
+    max_acceleration: 1.0

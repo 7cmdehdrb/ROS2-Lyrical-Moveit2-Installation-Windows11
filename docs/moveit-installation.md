@@ -51,6 +51,8 @@ call C:\python_ws\ros2\activate_moveit.cmd
 
 ## 자동 Planning 검증
 
+일상적인 launch 실행, 자신의 로봇 설정 패키지 사용, kinematics·joint limits·OMPL YAML 변경은 [MoveIt 사용 가이드](moveit-usage.md)에 정리했습니다. 일반 `rclpy` Python 파일 실행은 [Python 스크립트 가이드](python-scripts.md)를 참고합니다.
+
 설치 명령의 기본 검증은 아래 명령과 같습니다. 활성화된 MoveIt 터미널에서:
 
 ```bat

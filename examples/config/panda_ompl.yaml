@@ -1,0 +1,5 @@
+# The example launch merges this into the packaged OMPL configuration.
+planner_configs:
+  RRTConnectkConfigDefault:
+    type: geometric::RRTConnect
+    range: 0.15

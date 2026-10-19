@@ -1,0 +1,4 @@
+hello_ros:
+  ros__parameters:
+    message: Hello from a ROS parameter file
+    max_messages: 3

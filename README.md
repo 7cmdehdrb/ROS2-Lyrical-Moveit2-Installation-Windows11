@@ -89,6 +89,9 @@ git status --short
 
 - [공식 ROS 2 Lyrical 설치](docs/ros2-installation.md)
 - [MoveIt 2 설치와 Planning](docs/moveit-installation.md)
+- [ROS 2 기본 사용: run, launch, topic, RViz](docs/ros2-usage.md)
+- [일반 Python 파일을 ROS 2 환경에서 실행](docs/python-scripts.md)
+- [MoveIt 실행과 kinematics·joint limits·OMPL YAML 변경](docs/moveit-usage.md)
 - 기존 로컬 설치 기록: `README.txt`, `MOVEIT_README.txt` — 기록의 경로는 최초 설치 위치 기준입니다.
 
 설치 방식은 [ROS 2 Windows 바이너리 안내](https://docs.ros.org/en/lyrical/Get-Started/Installation/Windows-Install-Binary.html), [MoveIt Windows 바이너리 안내](https://moveit.ai/install-moveit2/binary-windows/), [RoboStack 시작 안내](https://robostack.github.io/GettingStarted.html)를 참고했습니다.

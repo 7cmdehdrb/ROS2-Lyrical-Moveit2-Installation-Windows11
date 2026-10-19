@@ -2,6 +2,8 @@
 
 이 가이드는 ROS 2 공식 Windows AMD64 바이너리 `release-lyrical-20260807`을 설치합니다. 배포 ZIP에 포함된 Pixi manifest와 lock을 사용하여 Python 3.12.3 및 의존성을 구성합니다. MoveIt이 목적이라면 [MoveIt 가이드](moveit-installation.md)의 별도 RoboStack 설치만으로도 시작할 수 있습니다.
 
+설치 후에는 [ROS 2 기본 사용](ros2-usage.md)과 [일반 Python 스크립트 실행](python-scripts.md)을 참고합니다.
+
 ## 자동 설치
 
 저장소를 `C:\python_ws\ros2`에 clone한 뒤 새 PowerShell에서 실행합니다.

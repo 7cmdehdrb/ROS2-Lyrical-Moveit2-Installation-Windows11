@@ -1,0 +1,14 @@
+[workspace]
+name = "lyrical-moveit-windows"
+description = "ROS 2 Lyrical and MoveIt 2 Windows binary environment from RoboStack"
+channels = ["https://prefix.dev/robostack-lyrical", "conda-forge"]
+platforms = ["win-64"]
+
+[dependencies]
+ros-lyrical-desktop = "*"
+ros-lyrical-moveit = "*"
+ros-lyrical-moveit-py = "*"
+ros-lyrical-moveit-servo = "*"
+ros-lyrical-moveit-resources-panda-moveit-config = "*"
+ros-lyrical-ros2-controllers = "*"
+ros-lyrical-warehouse-ros-sqlite = "*"

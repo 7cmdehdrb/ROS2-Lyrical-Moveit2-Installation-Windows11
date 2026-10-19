@@ -1,0 +1,15 @@
+@echo off
+set "PIXI_HOME=%~dp0tools\pixi-home"
+set "PIXI_CACHE_DIR=%~dp0.cache\pixi"
+set "RATTLER_CACHE_DIR=%PIXI_CACHE_DIR%"
+set "UV_CACHE_DIR=%~dp0.cache\uv"
+set "PIP_CACHE_DIR=%~dp0.cache\pip"
+set "TEMP=%~dp0tmp"
+set "TMP=%TEMP%"
+set "ROS_HOME=%~dp0.ros"
+set "ROS_LOG_DIR=%~dp0logs\ros"
+set "COLCON_HOME=%~dp0.colcon"
+rem Keep Fast DDS runtime files out of the system ProgramData directory.
+set "FASTDDS_BUILTIN_TRANSPORTS=UDPv4"
+set "PYTHONNOUSERSITE=1"
+set "PATH=%~dp0tools\pixi;%PATH%"

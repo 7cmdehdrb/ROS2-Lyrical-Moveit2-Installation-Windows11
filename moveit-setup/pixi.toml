@@ -1,0 +1,9 @@
+[workspace]
+name = "lyrical-moveit-setup-assistant"
+description = "MoveIt Setup Assistant with its required Qt runtime, isolated from PyQt"
+channels = ["https://prefix.dev/robostack-lyrical", "conda-forge"]
+platforms = ["win-64"]
+
+[dependencies]
+ros-lyrical-moveit-setup-assistant = "==2.15.2"
+qt6-main = ">=6.12,<6.13"

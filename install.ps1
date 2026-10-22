@@ -3,7 +3,7 @@
 param(
     [ValidateSet('ROS2', 'MoveIt', 'All')][string]$Component = 'All',
     [switch]$SkipVerification,
-    [switch]$VerifyExecution
+    [string]$PythonExecutable
 )
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
@@ -19,6 +19,8 @@ $Summary = [ordered]@{
 try {
     . "$ProjectRoot\scripts\install-common.ps1"
     Assert-InstallHost
+    # This prerequisite is mandatory even for MoveIt-only / SkipVerification.
+    $Summary.prerequisite_python = Assert-CompatiblePython $PythonExecutable
     . "$ProjectRoot\env-local.ps1"
     $Sources = Get-Content -LiteralPath "$ProjectRoot\config\sources.json" -Raw | ConvertFrom-Json
     $PixiExe = Install-ProjectPixi $Sources.pixi
@@ -38,9 +40,7 @@ try {
             Invoke-Checked $PixiExe @('install', '--locked', '--manifest-path', $Manifest)
         }
         if (!$SkipVerification) {
-            $CheckArgs = @('--planning-only')
-            if ($VerifyExecution) { $CheckArgs = @() }
-            Invoke-ActivatedPython 'activate_moveit.cmd' 'moveit\verify_runtime.py' $CheckArgs
+            Invoke-ActivatedPython 'activate_moveit.cmd' 'moveit\verify_runtime.py'
         }
     }
     $Summary.success = $true
@@ -49,6 +49,8 @@ try {
     $Summary | ConvertTo-Json | Set-Content -LiteralPath "$ProjectRoot\logs\install-$Component.json" -Encoding UTF8
     Write-Host "Installation complete: $Component ($ProjectRoot)"
     Write-Host 'ROS 2: start_ros2.cmd | MoveIt: start_moveit.cmd | Setup Assistant: start_moveit_setup.cmd'
+    Write-Host 'REQUIRED EVERY TIME: open the matching start_*.cmd BEFORE running ros2 or Python ROS scripts.'
+    Write-Host 'Run commands inside that activated terminal. Each additional terminal must be activated separately.'
 } catch {
     $Summary.error = $_.Exception.Message
     $Summary.completed_at = [DateTimeOffset]::Now.ToString('o')

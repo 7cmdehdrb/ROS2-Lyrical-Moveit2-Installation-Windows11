@@ -10,9 +10,79 @@ function Assert-InstallHost {
         throw 'Open a fresh PowerShell without ROS, Conda, or a Python virtual environment activated.'
     }
     if ($ProjectRoot -match '[\s!%&^()\x27]') {
-        throw 'Use a short project path without spaces or shell metacharacters, e.g. C:\python_ws\ros2.'
+        throw 'Use a short project path without spaces or shell metacharacters (<your-workspace>).'
     }
     [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+}
+
+function Invoke-PythonProbe {
+    param([string]$Executable, [string[]]$PrefixArguments = @())
+    # Isolate the probe from user site packages, PYTHONPATH and sitecustomize.
+    $Code = "import json,sys,struct,platform; print(json.dumps(dict(version=list(sys.version_info[:3]),releaselevel=sys.version_info.releaselevel,implementation=platform.python_implementation(),bits=struct.calcsize('P')*8,machine=platform.machine(),platform=sys.platform,executable=sys.executable)))"
+    try {
+        $Output = & $Executable @PrefixArguments -I -S -c $Code 2>$null
+        if ($LASTEXITCODE -ne 0) { return $null }
+        return ($Output -join "`n" | ConvertFrom-Json)
+    } catch { return $null }
+}
+
+function Test-CompatiblePython {
+    param($Info)
+    return ($null -ne $Info -and
+        $Info.implementation -eq 'CPython' -and $Info.platform -eq 'win32' -and
+        $Info.bits -eq 64 -and $Info.machine -in @('AMD64', 'x86_64') -and
+        $Info.version[0] -eq 3 -and $Info.version[1] -eq 12 -and
+        $Info.version[2] -ge 3 -and $Info.releaselevel -eq 'final')
+}
+
+function Assert-CompatiblePython {
+    param([string]$PythonExecutable)
+    $Candidates = @()
+    if ($PythonExecutable) {
+        # An explicit selection is authoritative: never silently fall back.
+        $Candidates += @{ Exe = $PythonExecutable; Args = @() }
+    } else {
+        $Launcher = Get-Command py.exe -CommandType Application -ErrorAction SilentlyContinue | Select-Object -First 1
+        if ($Launcher) { $Candidates += @{ Exe = $Launcher.Source; Args = @('-3.12') } }
+        foreach ($Name in @('python.exe', 'python3.exe')) {
+            foreach ($Command in @(Get-Command $Name -CommandType Application -All -ErrorAction SilentlyContinue)) {
+                # Do not open the Microsoft Store via an execution alias.
+                if ($Command.Source -notlike '*\Microsoft\WindowsApps\*') {
+                    $Candidates += @{ Exe = $Command.Source; Args = @() }
+                }
+            }
+        }
+    }
+    $Detected = @()
+    # Never let a Python launcher install Python on behalf of this preflight.
+    $OldAllowInstall = $env:PYLAUNCHER_ALLOW_INSTALL
+    $OldAutomaticInstall = $env:PYTHON_MANAGER_AUTOMATIC_INSTALL
+    try {
+        $env:PYLAUNCHER_ALLOW_INSTALL = $null
+        $env:PYTHON_MANAGER_AUTOMATIC_INSTALL = 'false'
+        foreach ($Candidate in $Candidates) {
+            $Info = Invoke-PythonProbe $Candidate.Exe $Candidate.Args
+            if (Test-CompatiblePython $Info) {
+                Write-Host "Python prerequisite OK: $($Info.executable) (CPython $($Info.version -join '.'), x64)"
+                return $Info
+            }
+            if ($Info) { $Detected += "$($Info.executable): $($Info.implementation) $($Info.version -join '.') / $($Info.bits)-bit / $($Info.machine)" }
+        }
+    } finally {
+        $env:PYLAUNCHER_ALLOW_INSTALL = $OldAllowInstall
+        $env:PYTHON_MANAGER_AUTOMATIC_INSTALL = $OldAutomaticInstall
+    }
+    throw @"
+Required Python is missing or incompatible. Installation refused BEFORE any download.
+Install Windows x64 CPython 3.12.x (3.12.3 or newer patch, not 3.13/3.14) FIRST.
+Python 3.12.3 download: https://www.python.org/downloads/release/python-3123/
+Choose 'Windows installer (64-bit)', then open a fresh PowerShell and rerun install.ps1.
+Check with: py -3.12 -c "import sys, struct; print(sys.version); print(struct.calcsize('P') * 8)"
+If not discoverable, pass: -PythonExecutable '<path-to-python312>\python.exe'
+Detected: $($Detected -join '; ')
+This repository requires this prerequisite for ROS2, MoveIt and All, including -SkipVerification.
+Pixi still supplies separate runtime Pythons; do not replace MoveIt's locked Python with system Python.
+"@
 }
 
 function Invoke-Checked {

@@ -1,21 +1,25 @@
 # Windows 11에서 공식 ROS 2 Lyrical 설치
 
+> **가장 먼저:** 설치 전에는 [필수 Python 3.12 x64 사전 설치](../README.md#0-필수-python부터-설치)를 완료하십시오. 설치 후에는 `start_ros2.cmd`(공식 ROS) 또는 `start_moveit.cmd`(MoveIt)를 **매번 먼저 실행**하고, 열린 전용 터미널 안에서 아래 ROS/Python 명령을 실행합니다. 새 터미널마다 활성화해야 합니다.
+
+`<your-workspace>`는 저장소 폴더의 실제 절대 경로로 바꿉니다. 꺾쇠를 그대로 입력하지 마십시오.
+
 이 가이드는 ROS 2 공식 Windows AMD64 바이너리 `release-lyrical-20260807`을 설치합니다. 배포 ZIP에 포함된 Pixi manifest와 lock을 사용하여 Python 3.12.3 및 의존성을 구성합니다. MoveIt이 목적이라면 [MoveIt 가이드](moveit-installation.md)의 별도 RoboStack 설치만으로도 시작할 수 있습니다.
 
 설치 후에는 [ROS 2 기본 사용](ros2-usage.md)과 [일반 Python 스크립트 실행](python-scripts.md)을 참고합니다.
 
 ## 자동 설치
 
-저장소를 `C:\python_ws\ros2`에 clone한 뒤 새 PowerShell에서 실행합니다.
+저장소를 `<your-workspace>`에 clone한 뒤 새 PowerShell에서 실행합니다.
 
 ```powershell
-cd C:\python_ws\ros2
+cd "<your-workspace>"
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Component ROS2
 ```
 
 스크립트는 다음 순서로 처리합니다.
 
-1. Windows 11 x64와 깨끗한 터미널 환경을 확인합니다.
+1. Windows 11 x64, 깨끗한 터미널, **미리 설치된 CPython 3.12.x(3.12.3 이상) x64**를 확인합니다. 부적합하면 다운로드·설치 전에 실패 코드로 종료하며 Python 설치 주소를 안내합니다. `-SkipVerification`으로 생략할 수 없습니다.
 2. `downloads/`에 Pixi 0.82.0 ZIP을 내려받고 SHA-256 확인 후 `tools/pixi/`에 설치합니다.
 3. 공식 ROS ZIP을 같은 폴더에 내려받고 SHA-256 확인 후 `lyrical/`에 풉니다.
 4. `pixi install --locked`로 배포본의 의존성을 설치합니다.
@@ -29,14 +33,14 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Component
 `start_ros2.cmd`를 실행하면 환경이 활성화된 CMD가 열립니다. 이미 열린 깨끗한 CMD에서는 다음을 사용합니다.
 
 ```bat
-call C:\python_ws\ros2\activate_ros2.cmd
+call "<your-workspace>\activate_ros2.cmd"
 ros2 --help
 ```
 
 PowerShell에서는 dot-source합니다.
 
 ```powershell
-. C:\python_ws\ros2\activate_ros2.ps1
+. "<your-workspace>\activate_ros2.ps1"
 ```
 
 터미널 두 개를 각각 활성화한 뒤 실행합니다.
@@ -54,7 +58,7 @@ ros2 run demo_nodes_py listener
 `Publishing`과 `I heard`가 반복되면 송수신이 정상입니다. 종료는 Ctrl+C입니다. 자동 검사를 다시 실행하려면 활성화된 터미널에서 다음을 사용합니다.
 
 ```bat
-python C:\python_ws\ros2\verify_install.py
+python "<your-workspace>\verify_install.py"
 ```
 
 자동 검사는 localhost, ROS_DOMAIN_ID 177을 사용합니다. 일반 실행기에는 이 테스트 도메인을 적용하지 않습니다.
@@ -64,7 +68,7 @@ python C:\python_ws\ros2\verify_install.py
 이미 ZIP 압축 해제까지 끝난 경우 새 PowerShell에서 다음을 실행할 수 있습니다.
 
 ```powershell
-cd C:\python_ws\ros2
+cd "<your-workspace>"
 . .\env-local.ps1
 cd .\lyrical
 pixi install --locked

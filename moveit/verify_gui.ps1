@@ -17,7 +17,7 @@ $GuiEnvironment = @{
 }
 $GuiChecks = @{}
 foreach ($GuiTarget in @(
-    @{Name='rviz2'; Exe="$env:CONDA_PREFIX\Library\bin\rviz2.exe"; Args=@('-d', "$env:CONDA_PREFIX\Library\share\moveit_resources_panda_moveit_config\launch\moveit.rviz")},
+    @{Name='rviz2'; Exe="$env:CONDA_PREFIX\Library\bin\rviz2.exe"; Args=@('-d', "$env:CONDA_PREFIX\Library\share\ur_moveit_config\config\moveit.rviz")},
     @{Name='setup-assistant'; Exe="$env:CONDA_PREFIX\Library\lib\moveit_setup_assistant\moveit_setup_assistant.exe"; Args=@('--ros-args', '--log-level', 'info')}
 )) {
     if ($GuiTarget.Name -ne $Component) { continue }

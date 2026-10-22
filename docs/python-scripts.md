@@ -1,5 +1,9 @@
 # ROS 2 환경에서 일반 Python 파일 실행
 
+> **가장 먼저:** 설치 전에는 [필수 Python 3.12 x64 사전 설치](../README.md#0-필수-python부터-설치)를 완료하십시오. 설치 후에는 `start_ros2.cmd`(공식 ROS) 또는 `start_moveit.cmd`(MoveIt)를 **매번 먼저 실행**하고, 열린 전용 터미널 안에서 아래 ROS/Python 명령을 실행합니다. 새 터미널마다 활성화해야 합니다.
+
+`<your-workspace>`는 저장소 폴더의 실제 절대 경로로 바꿉니다. 꺾쇠를 그대로 입력하지 마십시오.
+
 `import rclpy`를 사용하는 파일은 ROS 패키지의 executable로 등록하지 않아도 실행할 수 있습니다. **현재 설치에서는 해당 ROS 환경을 활성화한 뒤 `python 파일.py`로 실행합니다.**
 
 Ubuntu에서 `/opt/ros/humble/setup.bash` 등을 source한 후 `python3`를 쓰는 것과 같은 원리입니다. 차이는 Windows에서 이 프로젝트의 Pixi Python과 DLL·패키지 검색 환경을 함께 선택한다는 점입니다. Python 코드에 `/opt/ros/...`나 Windows 설치 경로를 직접 추가할 필요가 없습니다.
@@ -14,9 +18,9 @@ Ubuntu에서 `/opt/ros/humble/setup.bash` 등을 source한 후 `python3`를 쓰�
 예를 들어 CMD에서:
 
 ```bat
-call C:\python_ws\ros2\activate_moveit.cmd
+call "<your-workspace>\activate_moveit.cmd"
 python -c "import sys, rclpy; print(sys.executable); print(rclpy.__file__)"
-python C:\python_ws\ros2\examples\hello_ros.py
+python "<your-workspace>\examples\hello_ros.py"
 ```
 
 공식 ROS만 사용하려면 첫 줄을 `activate_ros2.cmd`로 바꿉니다. Python 파일은 동일하게 실행할 수 있습니다. 종료는 Ctrl+C입니다.
@@ -24,8 +28,8 @@ python C:\python_ws\ros2\examples\hello_ros.py
 PowerShell에서는:
 
 ```powershell
-. C:\python_ws\ros2\activate_moveit.ps1
-python C:\python_ws\ros2\examples\hello_ros.py
+. "<your-workspace>\activate_moveit.ps1"
+python "<your-workspace>\examples\hello_ros.py"
 ```
 
 활성화된 터미널에서 `python`이 전용 Python을 가리키는 것을 확인합니다. Windows의 `py`, 시스템 Python, 다른 venv의 Python은 별도 실행 파일을 선택할 수 있으므로 이 예제에서는 사용하지 않습니다. 환경 활성화 없이 전용 `python.exe` 경로만 직접 지정해도 DLL 검색 경로나 ROS 패키지 검색 경로가 빠질 수 있습니다.
@@ -37,7 +41,7 @@ python C:\python_ws\ros2\examples\hello_ros.py
 첫 번째 터미널:
 
 ```bat
-python C:/python_ws/ros2/examples/hello_ros.py
+python "<your-workspace>/examples/hello_ros.py"
 ```
 
 두 번째 터미널도 같은 ROS 환경을 활성화한 뒤:
@@ -51,13 +55,13 @@ ros2 param get /hello_ros message
 이 파일에는 `message`와 `max_messages` 파라미터가 선언되어 있습니다. 세 번 발행하고 종료하려면:
 
 ```bat
-python C:/python_ws/ros2/examples/hello_ros.py --ros-args -p max_messages:=3 -p "message:=Hello from Windows"
+python "<your-workspace>/examples/hello_ros.py" --ros-args -p max_messages:=3 -p "message:=Hello from Windows"
 ```
 
 노드와 토픽 이름도 바꿀 수 있습니다.
 
 ```bat
-python C:/python_ws/ros2/examples/hello_ros.py --ros-args -r __node:=my_python_node -r hello:=my_hello
+python "<your-workspace>/examples/hello_ros.py" --ros-args -r __node:=my_python_node -r hello:=my_hello
 ```
 
 이 경우 노드는 `/my_python_node`, 토픽은 `/my_hello`입니다. 일반 Python 파일이어도 `rclpy.init()`가 ROS 인수를 읽으므로 동일한 ROS remapping과 파라미터 문법을 사용할 수 있습니다. 자체 `argparse`가 있다면 ROS 인수와 충돌하지 않도록 분리해서 처리해야 합니다.
@@ -76,7 +80,7 @@ hello_ros:
 저장소에 있는 파일을 그대로 사용할 수 있습니다.
 
 ```bat
-python C:/python_ws/ros2/examples/hello_ros.py --ros-args --params-file C:/python_ws/ros2/examples/config/hello_ros.yaml
+python "<your-workspace>/examples/hello_ros.py" --ros-args --params-file "<your-workspace>/examples/config/hello_ros.yaml"
 ```
 
 최상위 `hello_ros`는 실제 노드 이름과 맞아야 합니다. 노드 이름이나 namespace를 바꾸면 파일의 대상 이름도 맞추거나 목적에 맞는 ROS 파라미터 wildcard를 사용해야 합니다.
@@ -88,7 +92,7 @@ python C:/python_ws/ros2/examples/hello_ros.py --ros-args --params-file C:/pytho
 [`examples/hello_ros.launch.py`](../examples/hello_ros.launch.py)는 활성화된 Python의 `sys.executable`을 이용해 `ExecuteProcess`로 스크립트를 시작합니다. 시스템 Python 이름을 하드코딩하지 않으므로 현재 선택한 ROS 환경을 따릅니다.
 
 ```bat
-ros2 launch C:/python_ws/ros2/examples/hello_ros.launch.py max_messages:=3 "message:=Hello from launch"
+ros2 launch "<your-workspace>/examples/hello_ros.launch.py" max_messages:=3 "message:=Hello from launch"
 ```
 
 `--show-args`로 지원 인수를 볼 수 있습니다. launch 파일을 일반 경로로 실행하는 이 방식에도 `colcon build`나 `setup.py` 등록이 필요하지 않습니다. `ExecuteProcess`가 ROS 파라미터를 자동으로 만들어 주는 것은 아니며, 예제에서 `--ros-args -p ...`를 명시적으로 전달합니다.

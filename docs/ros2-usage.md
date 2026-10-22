@@ -1,5 +1,9 @@
 # Windows 11에서 ROS 2 기본 사용
 
+> **가장 먼저:** 설치 전에는 [필수 Python 3.12 x64 사전 설치](../README.md#0-필수-python부터-설치)를 완료하십시오. 설치 후에는 `start_ros2.cmd`(공식 ROS) 또는 `start_moveit.cmd`(MoveIt)를 **매번 먼저 실행**하고, 열린 전용 터미널 안에서 아래 ROS/Python 명령을 실행합니다. 새 터미널마다 활성화해야 합니다.
+
+`<your-workspace>`는 저장소 폴더의 실제 절대 경로로 바꿉니다. 꺾쇠를 그대로 입력하지 마십시오.
+
 이 저장소의 설치가 끝난 상태를 기준으로 설명합니다. ROS 명령의 구조는 Ubuntu와 같고, 먼저 실행하는 환경 활성화 명령이 다릅니다. 아래 `bat` 코드 블록은 CMD 기준입니다.
 
 ## 터미널마다 환경 활성화
@@ -7,26 +11,26 @@
 공식 ROS만 사용할 때는 `start_ros2.cmd`, MoveIt과 함께 사용할 때는 `start_moveit.cmd`를 엽니다. 이미 열린 **새 CMD**에서는 하나만 선택합니다.
 
 ```bat
-call C:\python_ws\ros2\activate_ros2.cmd
+call "<your-workspace>\activate_ros2.cmd"
 ```
 
 ```bat
-call C:\python_ws\ros2\activate_moveit.cmd
+call "<your-workspace>\activate_moveit.cmd"
 ```
 
 PowerShell에서는 다음 중 하나를 dot-source합니다.
 
 ```powershell
-. C:\python_ws\ros2\activate_ros2.ps1
+. "<your-workspace>\activate_ros2.ps1"
 ```
 
 MoveIt 작업용 새 PowerShell에서는 위 명령 대신 다음을 사용합니다.
 
 ```powershell
-. C:\python_ws\ros2\activate_moveit.ps1
+. "<your-workspace>\activate_moveit.ps1"
 ```
 
-두 환경을 한 터미널에 겹쳐 적용하지 않습니다. PowerShell에서 `.cmd`를 실행하는 것만으로는 자식 CMD의 환경이 현재 PowerShell로 전달되지 않으므로 `.ps1`을 사용합니다. 활성화 스크립트가 작업 디렉터리도 바꾸므로 아래 예제는 필요한 경우 절대 경로를 사용합니다.
+**실행기를 한 번 열었다고 다른 터미널까지 활성화되는 것은 아닙니다.** `start_*.cmd`가 연 CMD에서 작업하거나, 현재 터미널에 맞는 `activate_*`를 실행하십시오. 두 환경을 한 터미널에 겹쳐 적용하지 않습니다. PowerShell에서 `.cmd`를 실행하는 것만으로는 자식 CMD의 환경이 현재 PowerShell로 전달되지 않으므로 `.ps1`을 사용합니다. 활성화 스크립트가 작업 디렉터리도 바꾸므로 아래 예제는 필요한 경우 절대 경로를 사용합니다.
 
 ```bat
 echo %ROS_DISTRO%
@@ -87,14 +91,14 @@ ros2 launch demo_nodes_cpp talker_listener_launch.py
 패키지로 설치하지 않은 launch 파일은 경로로 실행할 수도 있습니다.
 
 ```bat
-ros2 launch C:/python_ws/ros2/examples/hello_ros.launch.py max_messages:=3
+ros2 launch "<your-workspace>/examples/hello_ros.launch.py" max_messages:=3
 ```
 
 launch 인수 목록은 먼저 확인합니다.
 
 ```bat
-ros2 launch C:/python_ws/ros2/examples/hello_ros.launch.py --show-args
-ros2 launch moveit_resources_panda_moveit_config demo.launch.py --show-args
+ros2 launch "<your-workspace>/examples/hello_ros.launch.py" --show-args
+ros2 launch "<your-workspace>/examples/ur_planning.launch.py" --show-args
 ```
 
 `인수명:=값`은 launch 파일이 받아서 사용하도록 작성된 인수입니다. ROS 노드 파라미터와 자동으로 연결되는 것은 아닙니다. 예를 들어 `kinematics_solver_timeout:=0.2`를 아무 launch에 붙여도 MoveIt 설정이 바뀌지는 않습니다. [MoveIt 설정 가이드](moveit-usage.md)에서 연결 방법을 설명합니다.
@@ -148,10 +152,10 @@ ros2 run rviz2 rviz2
 기존 `.rviz` 설정을 불러오는 형식은 다음과 같습니다. 경로는 실제 파일로 바꿉니다.
 
 ```bat
-rviz2 -d C:/python_ws/ros2/my_robot_ws/src/my_robot_moveit_config/config/my_robot.rviz
+rviz2 -d "<your-workspace>/my_robot_ws/src/my_robot_moveit_config/config/my_robot.rviz"
 ```
 
-RViz는 시각화 도구이므로 단독 실행만으로 로봇 모델이나 Planning 서버를 띄우지는 않습니다. 로봇 관련 노드가 이미 실행되어 있어야 하며, `Global Options → Fixed Frame`을 실제 TF 프레임으로 맞추고 필요한 Display를 추가합니다. Panda 예제에서는 `world` 또는 `panda_link0` 프레임을 확인할 수 있습니다.
+RViz는 시각화 도구이므로 단독 실행만으로 로봇 모델이나 Planning 서버를 띄우지는 않습니다. 로봇 관련 노드가 이미 실행되어 있어야 하며, `Global Options → Fixed Frame`을 실제 TF 프레임으로 맞추고 필요한 Display를 추가합니다. UR 예제의 Fixed Frame은 `world`이며 Planning Group은 `ur_manipulator`입니다.
 
 MoveIt의 MotionPlanning 패널까지 사용하려면 [MoveIt launch](moveit-usage.md)로 함께 시작하는 것이 편합니다. `.rviz` 파일은 화면 구성이고, `kinematics.yaml`이나 로봇 제어 설정을 대신하지 않습니다.
 

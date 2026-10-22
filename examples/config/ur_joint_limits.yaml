@@ -1,6 +1,6 @@
-# The example launch merges these fields into the packaged joint limits.
+# Optional override merged into the selected UR model's planning limits.
 joint_limits:
-  panda_joint1:
+  shoulder_pan_joint:
     has_velocity_limits: true
     max_velocity: 1.0
     has_acceleration_limits: true

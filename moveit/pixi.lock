@@ -363,18 +363,16 @@ environments:
       - conda: https://prefix.dev/conda-forge/win-64/zstd-1.5.7-h534d264_7.conda
       - conda: https://prefix.dev/conda-forge/win-64/zziplib-0.13.69-h3ca93ac_2.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-desktop-0.13.0-h9490d1a_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-joint-state-publisher-2.4.3-h9490d1a_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-moveit-2.15.2-h9490d1a_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-moveit-py-2.15.2-h9490d1a_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-moveit-resources-panda-moveit-config-3.2.1-h9490d1a_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-moveit-servo-2.15.2-h9490d1a_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-ros2-controllers-6.9.0-h9490d1a_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-ur-description-4.3.1-h9490d1a_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-ur-moveit-config-6.1.0-h9490d1a_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-warehouse-ros-sqlite-1.0.9-h9490d1a_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ackermann-msgs-2.0.2-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ackermann-steering-controller-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-action-msgs-2.4.5-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-action-tutorials-cpp-0.37.9-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-action-tutorials-py-0.37.9-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-admittance-controller-6.9.0-np2py314hcdf597f_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ament-cmake-2.8.8-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ament-cmake-auto-2.8.8-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ament-cmake-copyright-0.20.6-np2py314hf807026_27.conda
@@ -422,10 +420,7 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ament-xmllint-0.20.6-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-angles-1.16.1-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-backward-ros-1.0.8-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-battery-state-broadcaster-6.9.0-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-bicycle-steering-controller-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-builtin-interfaces-2.4.5-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-chained-filter-controller-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-chomp-motion-planner-2.15.2-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-class-loader-2.9.4-np2py314h44b9ce8_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-common-interfaces-5.9.3-np2py314hf807026_27.conda
@@ -446,7 +441,6 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-desktop-0.13.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-diagnostic-msgs-5.9.3-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-diagnostic-updater-4.4.7-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-diff-drive-controller-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-distro-mutex-0.21.0-lyrical_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-dummy-map-server-0.37.9-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-dummy-robot-bringup-0.37.9-np2py314hf807026_27.conda
@@ -474,16 +468,12 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-fastdds-3.6.2-np2py314h92dadff_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-filters-2.2.2-np2py314h8a564fe_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-foonathan-memory-vendor-1.4.1-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-force-torque-sensor-broadcaster-6.9.0-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-forward-command-controller-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-generate-parameter-library-1.3.0-np2py314h153b0b8_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-generate-parameter-library-py-1.3.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-geometric-shapes-2.3.4-np2py314h68a1880_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-geometry-msgs-5.9.3-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-geometry2-0.45.10-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-google-benchmark-vendor-0.7.0-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-gpio-controllers-6.9.0-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-gps-sensor-broadcaster-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-gz-cmake-vendor-0.4.5-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-gz-math-vendor-0.4.5-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-gz-tools-vendor-0.2.2-np2py314hf807026_27.conda
@@ -495,7 +485,6 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-image-geometry-4.1.0-np2py314hff4309d_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-image-tools-0.37.9-np2py314hff4309d_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-image-transport-6.4.10-np2py314hcdf597f_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-imu-sensor-broadcaster-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-interactive-markers-2.8.4-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-intra-process-demo-0.37.9-np2py314hff4309d_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-joint-limits-6.10.1-np2py314h153b0b8_27.conda
@@ -506,7 +495,6 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-joy-3.3.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-kdl-parser-3.0.1-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-keyboard-handler-0.5.1-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-kinematics-interface-2.4.2-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-laser-geometry-2.11.3-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-launch-3.9.8-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-launch-param-builder-0.1.1-np2py314hf807026_27.conda
@@ -522,12 +510,9 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-lifecycle-msgs-2.4.5-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-logging-demo-0.37.9-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-lz4-cmake-module-0.33.4-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-magnetometer-broadcaster-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-map-msgs-2.6.1-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-mcap-vendor-0.33.4-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-mecanum-drive-controller-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-message-filters-7.4.2-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-motion-primitives-controllers-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-2.15.2-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-common-2.15.2-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-configs-utils-2.15.2-np2py314hf807026_27.conda
@@ -540,8 +525,6 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-planners-stomp-2.15.2-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-plugins-2.15.2-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-py-2.15.2-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-resources-panda-description-3.2.1-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-resources-panda-moveit-config-3.2.1-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-ros-2.15.2-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-ros-benchmarks-2.15.2-np2py314h8a564fe_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-ros-move-group-2.15.2-np2py314h153b0b8_27.conda
@@ -562,21 +545,17 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-nav-msgs-5.9.3-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-object-recognition-msgs-2.0.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-octomap-msgs-2.0.1-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-omni-wheel-drive-controller-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ompl-2.0.2-py314h11d6c76_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-orocos-kdl-vendor-0.8.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-osqp-vendor-1.0.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pal-statistics-2.8.2-np2py314h8a564fe_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pal-statistics-msgs-2.8.2-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-parallel-gripper-controller-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pcl-conversions-2.10.0-np2py314hb0ded2c_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pcl-msgs-1.0.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pendulum-msgs-0.37.9-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pid-controller-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pilz-industrial-motion-planner-2.15.2-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pluginlib-5.8.5-np2py314hcdf597f_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-point-cloud-transport-5.4.3-np2py314hcdf597f_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pose-broadcaster-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-python-qt-binding-2.5.5-np2py314hbbfc22f_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-qt-dotgraph-2.11.1-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-qt-gui-2.11.1-np2py314hf807026_27.conda
@@ -585,7 +564,6 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-quality-of-service-demo-cpp-0.37.9-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-quality-of-service-demo-py-0.37.9-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-random-numbers-2.0.5-np2py314h8a564fe_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-range-sensor-broadcaster-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-rcl-10.4.5-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-rcl-action-10.4.5-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-rcl-interfaces-2.4.5-np2py314hf807026_27.conda
@@ -625,7 +603,6 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ros-core-0.13.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ros-environment-4.5.1-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ros-workspace-1.0.3-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ros2-controllers-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ros2action-0.40.9-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ros2bag-0.33.4-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ros2cli-0.40.9-np2py314hf807026_27.conda
@@ -725,11 +702,9 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-srdfdom-2.0.9-np2py314h1879315_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-sros2-0.16.6-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-sros2-cmake-0.16.6-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-state-interfaces-broadcaster-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-statistics-msgs-2.4.5-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-std-msgs-5.9.3-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-std-srvs-5.9.3-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-steering-controllers-library-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-stereo-msgs-5.9.3-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-stomp-0.1.2-np2py314h44b9ce8_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-tango-icons-vendor-0.5.1-np2py314hf807026_27.conda
@@ -749,17 +724,15 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-tf2-sensor-msgs-0.45.10-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-tf2-tools-0.45.10-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-topic-monitor-0.37.9-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-topic-tools-1.5.0-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-topic-tools-interfaces-1.5.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-tracetools-8.10.2-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-trajectory-msgs-5.9.3-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-tricycle-controller-6.9.0-np2py314hf807026_27.conda
-      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-tricycle-steering-controller-6.9.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-turtlesim-1.10.9-np2py314hf8dfa29_28.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-turtlesim-msgs-1.10.9-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-type-description-interfaces-2.4.5-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-uncrustify-vendor-3.2.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-unique-identifier-msgs-2.8.1-np2py314hf807026_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ur-description-4.3.1-np2py314haf9a471_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ur-moveit-config-6.1.0-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-urdf-2.13.2-np2py314hcdf597f_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-urdf-parser-plugin-2.13.2-np2py314hf807026_27.conda
       - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-urdfdom-6.0.0-py314h0bc3ba6_27.conda
@@ -6084,6 +6057,15 @@ packages:
   run_exports: {}
   size: 2007
   timestamp: 1790932131786
+- conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-joint-state-publisher-2.4.3-h9490d1a_27.conda
+  sha256: e97e050843f1217339dddc327f492f2e0b82d0ae6468f2c77703fdc72b1751c6
+  md5: 28400f45975d964d179da67b20feda9f
+  attestations_sha256: 46d7e2970ee385caea070a75837a87b67a7d634109da8ab7eaed9e29938479ac
+  depends:
+  - ros2-joint-state-publisher ==2.4.3
+  run_exports: {}
+  size: 2075
+  timestamp: 1790818514426
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-moveit-2.15.2-h9490d1a_27.conda
   sha256: 3064739d487bb86bbb5481c7d714b7000b1192608317d9cc051499e328fb0fbc
   md5: 4df669525b56f6fcb5bb47e0789a2b35
@@ -6102,15 +6084,6 @@ packages:
   run_exports: {}
   size: 2025
   timestamp: 1790928812560
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-moveit-resources-panda-moveit-config-3.2.1-h9490d1a_27.conda
-  sha256: 2415bfd4340095835f9f9a29d5eae016e0da6d972f8076c5c44f5f0d0a9e6e5f
-  md5: c32f98705d83b4572b7fd44dd18b6c58
-  attestations_sha256: e4b2699f15905897f22ce8eb5178bea9b12bca278aea275690fcc6408dd22937
-  depends:
-  - ros2-moveit-resources-panda-moveit-config ==3.2.1
-  run_exports: {}
-  size: 2139
-  timestamp: 1790905402221
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-moveit-servo-2.15.2-h9490d1a_27.conda
   sha256: 5729580c08427e18114da0f2a5ae9d1fb83f2a0045ed7965709a62de3277f205
   md5: f8d05df90154184cf14cb0c203499c3d
@@ -6120,15 +6093,24 @@ packages:
   run_exports: {}
   size: 2036
   timestamp: 1790932131434
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-ros2-controllers-6.9.0-h9490d1a_27.conda
-  sha256: d4c58122bedfc96d210d44beb64cac2b7941188bb26765d68a3a241671a31870
-  md5: 48c9c5efba78ebb92f10e9e1303570b9
-  attestations_sha256: 3eb82f01e9c757ee6f15b5f486b59a2a27533d493b8ec43ec747a895bd284579
+- conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-ur-description-4.3.1-h9490d1a_27.conda
+  sha256: 175c293da1afd495a1a86bbe9bfe3f49a814ffa4acf6e05c79d9ac14bc83cae7
+  md5: 90aaed579f7b321a6b5f2fb23c416c0f
+  attestations_sha256: e9e8a3f4d9bf3d1b9c97a0e9eaba322536f7d681ce96b1d7a391a8d085bd7ce1
   depends:
-  - ros2-ros2-controllers ==6.9.0
+  - ros2-ur-description ==4.3.1
   run_exports: {}
-  size: 2043
-  timestamp: 1790906315767
+  size: 2038
+  timestamp: 1790923216957
+- conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-ur-moveit-config-6.1.0-h9490d1a_27.conda
+  sha256: 3202d110ca5ed5a85ffb765d44e7cb164d8c6f5355567fdab8107ffe9ee8316a
+  md5: 72d3ec1d042b06719f9ace002dbd30cd
+  attestations_sha256: 09edb3d7dd50c81d971a2c5b3fbc9f35f3fa2f3cc67bfe4607347422b5dd3aa3
+  depends:
+  - ros2-ur-moveit-config ==6.1.0
+  run_exports: {}
+  size: 2047
+  timestamp: 1790933883348
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros-lyrical-warehouse-ros-sqlite-1.0.9-h9490d1a_27.conda
   sha256: 9f003e27bb9139fdb8b2fbe390245e7c7c10f0ea1383585b2ea8db4d431fc4a0
   md5: 71fbbaa1b622b0b7ae99aea4f5d13eb3
@@ -6138,53 +6120,6 @@ packages:
   run_exports: {}
   size: 2063
   timestamp: 1790846550770
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ackermann-msgs-2.0.2-np2py314hf807026_27.conda
-  sha256: de003870ee580fc19b7297ca01b8f8f30389f60d9b16d80e782f0e54ff4539f0
-  md5: c75dc4369c123c559893c32d313d0570
-  attestations_sha256: 72914a7905b9ce44ab9c4dd89cdd214d24bcdbf9736f4bcba7b4cff1ef11d2f5
-  depends:
-  - python
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-ros-workspace
-  - ros2-rosidl-default-runtime
-  - ros2-std-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  license: BSD-3-Clause
-  run_exports: {}
-  size: 102194
-  timestamp: 1790811024150
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ackermann-steering-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: d02bdb9781a36b6897bb9dafffd97c4cc2bb84baed880cc77b62f8f1c77629e5
-  md5: 25bcb129dfcee2e9e7a46dfcae9bfe05
-  attestations_sha256: 8ed8797c8bbc973b98dbd1d98b6f3391fa795a7994c60fab29d1158b05fc3ea3
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-ros-workspace
-  - ros2-std-srvs
-  - ros2-steering-controllers-library
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 166491
-  timestamp: 1790849931612
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-action-msgs-2.4.5-np2py314hf807026_27.conda
   sha256: a1b1376bdde3dd4b904f74c12cfb16a4e42586d668e11f9cb74ca3e04e8dbc9c
   md5: ed8887544b51906073bcb3b2e73e22f1
@@ -6249,45 +6184,6 @@ packages:
   run_exports: {}
   size: 33222
   timestamp: 1790809121991
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-admittance-controller-6.9.0-np2py314hcdf597f_27.conda
-  sha256: 0120a5203a44c898a3da39b60dd3b74cb919677db865b23ddb3a7987e94a5513
-  md5: b57cffe1e51f3026813ece08db9efd13
-  attestations_sha256: 53875763fd7f861b649eeea068b3e57a3108fc623b7b04870ad398550f3c38ae
-  depends:
-  - python
-  - ros2-angles
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-control-toolbox
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-geometry-msgs
-  - ros2-hardware-interface
-  - ros2-kinematics-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-tf2
-  - ros2-tf2-eigen
-  - ros2-tf2-geometry-msgs
-  - ros2-tf2-kdl
-  - ros2-tf2-ros
-  - ros2-trajectory-msgs
-  - tinyxml2
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - tinyxml2 >=11.0.0,<11.1.0a0
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  license: Apache-2.0
-  run_exports: {}
-  size: 1319285
-  timestamp: 1790844460469
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ament-cmake-2.8.8-np2py314hf807026_27.conda
   sha256: f84134009097c362c23798d39cf608f9de14d53ebfc57ed5c7e578ac0cfd0d8b
   md5: cd8f136bf6b7bbd2d7486d485d230e7b
@@ -7231,60 +7127,6 @@ packages:
   run_exports: {}
   size: 145620
   timestamp: 1790779790614
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-battery-state-broadcaster-6.9.0-np2py314hf807026_27.conda
-  sha256: 59ee63642625b380152c77c7b975e467358220b9afb4d0613d1a58bf02979ee8
-  md5: 8a85bf9934b34a21ff52569a65c40ef9
-  attestations_sha256: e6bf1af213ba80ff21279c27fcd05796f293bfafe8b705c347672e06f7c80b4a
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-sensor-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  license: Apache-2.0
-  run_exports: {}
-  size: 413935
-  timestamp: 1790844167872
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-bicycle-steering-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: c4bddd097ebab35f08c67c8a60387c3a157d612ac53e81375a8b4d214a6719dc
-  md5: 12054286166e8f0ca8cd30fb3e8cd9c8
-  attestations_sha256: 2424cbd29528a38bd59ec26ed1d9c5803b3ebd3ea34dadf9bc65e771271ddc03
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-ros-workspace
-  - ros2-std-srvs
-  - ros2-steering-controllers-library
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - numpy >=1.25,<3
-  - python_abi 3.14.* *_cp314
-  license: Apache-2.0
-  run_exports: {}
-  size: 164279
-  timestamp: 1790849691681
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-builtin-interfaces-2.4.5-np2py314hf807026_27.conda
   sha256: 2c0157a9bd634336dce7dfd2ab3e7acd66be07ec631482a5f4161b6e6a564940
   md5: 381493d8066941df9d4aeab372a35f31
@@ -7304,30 +7146,6 @@ packages:
   run_exports: {}
   size: 90726
   timestamp: 1790801440412
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-chained-filter-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: ebf48b9fbea102cdcd967f3091f423d525ee61f1b21f26e42acd0f3077f453a0
-  md5: 54d0819ced8b2a6fae83430017f81268
-  attestations_sha256: 71a6e2f30c2fdcc4be0f1cbeaafc15b0117f5c21143a6d8b17edf8c464db6d65
-  depends:
-  - python
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-filters
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-ros-workspace
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  license: Apache-2.0
-  run_exports: {}
-  size: 320829
-  timestamp: 1790843911661
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-chomp-motion-planner-2.15.2-np2py314hf807026_27.conda
   sha256: 9ac41e4a8ea32d63db4e488c03b96f965c0c547bb5c83788b848b8bb476bb665
   md5: b1b90dae5d27b3bd360ba34dabb99cdb
@@ -7863,38 +7681,6 @@ packages:
   run_exports: {}
   size: 289166
   timestamp: 1790819464808
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-diff-drive-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: dc70c7bb97dab4f422552a3dee7be48ecbd1372fc85b8178021d993063d4870d
-  md5: 7f20598381c4b9bc161fbc7522f6f139
-  attestations_sha256: dc5700584b927ce5b8c78c4644629e2b5f24dc78ed7d382d7297d73dcd8783d6
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-control-toolbox
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-geometry-msgs
-  - ros2-hardware-interface
-  - ros2-nav-msgs
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-rcpputils
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-tf2
-  - ros2-tf2-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  license: Apache-2.0
-  run_exports: {}
-  size: 948727
-  timestamp: 1790845377326
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-distro-mutex-0.21.0-lyrical_27.conda
   sha256: a1292a49f6effdd8671e1766a1620e1dc0201c79860df420ba779cf58c8b4ee1
   md5: 03f94bd58cbd828ea8101d2cb90cdd0c
@@ -8445,64 +8231,6 @@ packages:
   run_exports: {}
   size: 17102
   timestamp: 1790787438744
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-force-torque-sensor-broadcaster-6.9.0-np2py314hf807026_27.conda
-  sha256: ff8f5171e1c9c79d2bb18505bf0346a5fefad819cc10e9ab6bfd993550bd9dad
-  md5: 2cb1c67d3c674f0b55fdcf3768b5ff47
-  attestations_sha256: a6ea4463141a4e1d1ef1415c23dd38ef99843a3937dba0c655421c9904730365
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-filters
-  - ros2-generate-parameter-library
-  - ros2-geometry-msgs
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-tf2
-  - ros2-tf2-geometry-msgs
-  - ros2-tf2-ros
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  license: Apache-2.0
-  run_exports: {}
-  size: 982991
-  timestamp: 1790845959044
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-forward-command-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: 5729d78ddcf382c80b60cf2fccdbe95926e352c8f181278b043ebd523d2cf91d
-  md5: db0925846bbda2ed5bf0c20a848d72f8
-  attestations_sha256: fd8dd8f471af1fe0595a9f322f30a278bdc57dba4eead4626bee478325398548
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-std-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 536514
-  timestamp: 1790845755381
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-generate-parameter-library-1.3.0-np2py314h153b0b8_27.conda
   sha256: d5786bfc4ebe6df2b13df321598458a6713d2773893cac25025ab9a91979cc95
   md5: 46df4a00e2b06b1a836fd3115c2aa87a
@@ -8657,57 +8385,6 @@ packages:
   run_exports: {}
   size: 14305
   timestamp: 1790778316232
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-gpio-controllers-6.9.0-np2py314hf807026_27.conda
-  sha256: 89414364a417fd74047296581a877b9e3fe42d3535cc0ba2421e3ac8a5d92878
-  md5: 3b1b96c8894b7b5e33aed65d4fb2a927
-  attestations_sha256: 249d0e7afe41aab6b0b0a5fca7b6c5fa96901a5f5f3f63e79a9df7bf3215f1ce
-  depends:
-  - python
-  - ros2-control-msgs
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-hardware-interface
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 721202
-  timestamp: 1790843291391
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-gps-sensor-broadcaster-6.9.0-np2py314hf807026_27.conda
-  sha256: 2aa772f3b2766941f7a4a758aacacf4718036f92a2ad75b06ac111e5d87e545b
-  md5: 9480d528c30621281cf3ab895434456d
-  attestations_sha256: d46e047c2745adb4463ad55d08047e761752ced5e06b5bcfb5845f1150bc746a
-  depends:
-  - python
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-sensor-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  license: Apache-2.0
-  run_exports: {}
-  size: 315706
-  timestamp: 1790847928638
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-gz-cmake-vendor-0.4.5-np2py314hf807026_27.conda
   sha256: b25452d03aaa6fb381a71c661cdc57e6349b8460a00691ab0c7c4e4ae330b786
   md5: a0ad054179e0f8b51bc91defd1489275
@@ -8950,34 +8627,6 @@ packages:
   run_exports: {}
   size: 351463
   timestamp: 1790825065187
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-imu-sensor-broadcaster-6.9.0-np2py314hf807026_27.conda
-  sha256: d048127f9b430dbbdeac8953d7c36ea8a36d1cae25715285e93eed6f90153a00
-  md5: 9113298b02d02580434f5181bab36f12
-  attestations_sha256: 11a5ff17f12b66ffb5b32a8e2b3defe8001593073c7e38f9029c972d7e8ebdcc
-  depends:
-  - eigen
-  - python
-  - ros2-backward-ros
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-sensor-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 392693
-  timestamp: 1790847744337
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-interactive-markers-2.8.4-np2py314hf807026_27.conda
   sha256: 4c35141b0efdb357ac83a7db88f9e0a38004d6d4d16e47ee0e2183d1caf4a995
   md5: 41ec08c8a5aadd79b8b7a1ab033633c0
@@ -9224,28 +8873,6 @@ packages:
   run_exports: {}
   size: 52757
   timestamp: 1790791006651
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-kinematics-interface-2.4.2-np2py314hf807026_27.conda
-  sha256: b465d2f7b7c12fb56f0c2607714736bd2a9f7c1b2df3e2091dd35b82bb66fc86
-  md5: 1eb3b1d950e9afed3705db9ffa36e03f
-  attestations_sha256: e594e540209cccd26de93703fe80bde91ea620a131ad5ef767e7e70986819e5b
-  depends:
-  - eigen
-  - python
-  - ros2-backward-ros
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-ros-workspace
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - numpy >=1.25,<3
-  - python_abi 3.14.* *_cp314
-  license: Apache-2.0
-  run_exports: {}
-  size: 74722
-  timestamp: 1790822934688
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-laser-geometry-2.11.3-np2py314hf807026_27.conda
   sha256: fb3b00925f3cebe229309b2be2a731d922f700192f624bd34240fb4f3dd0016b
   md5: a8cbc88e0b5078056f4928a5c2d422ae
@@ -9577,34 +9204,6 @@ packages:
   run_exports: {}
   size: 24800
   timestamp: 1790790485921
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-magnetometer-broadcaster-6.9.0-np2py314hf807026_27.conda
-  sha256: 9524d41338627f5b9fb57c9ac2b539a368f8e24ad95271d143c6e87138592641
-  md5: 9b98adb3462d8f7830c9ab59ea1a24be
-  attestations_sha256: dbe3f39cb6798fbe6b8a6130083292fd971c68b7aad7bbe7b68de2544d5c5d9c
-  depends:
-  - eigen
-  - python
-  - ros2-backward-ros
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-sensor-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 307862
-  timestamp: 1790847554957
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-map-msgs-2.6.1-np2py314hf807026_27.conda
   sha256: cad6d872662d62e01913f3fe3ff4e9db458ff65cb32b31144e75a837f943c871
   md5: ee86d7ed7d0478ccca4b9f980f70d27a
@@ -9647,39 +9246,6 @@ packages:
   run_exports: {}
   size: 166724
   timestamp: 1790792308339
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-mecanum-drive-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: 653ffe9dd9fade8bb10a47dce92e3e9434cdd0a16dd5e235742c4ebf9d7a399a
-  md5: 499aa75f6b4045b9f160ad4088d317d9
-  attestations_sha256: 2bc066248edd0ae1451ef0db7198ead5da03bb9d6c67306e8f2dfc9f764f2ce6
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-control-toolbox
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-geometry-msgs
-  - ros2-hardware-interface
-  - ros2-nav-msgs
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-rcpputils
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-tf2
-  - ros2-tf2-geometry-msgs
-  - ros2-tf2-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  license: Apache-2.0
-  run_exports: {}
-  size: 1028928
-  timestamp: 1790847361095
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-message-filters-7.4.2-np2py314hf807026_27.conda
   sha256: 7a4315bd0d5a3e97a5b84417b162675dcd93e8760e0212786fa745e93f3b3910
   md5: 3162b984ac2149aa8679e3518cf93f57
@@ -9703,32 +9269,6 @@ packages:
   run_exports: {}
   size: 103839
   timestamp: 1790818858586
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-motion-primitives-controllers-6.9.0-np2py314hf807026_27.conda
-  sha256: 2966f34de348265ae9936ad2633eb67b618b32a159e5019f627bf01ebf92b68c
-  md5: 1fdc10cfdb6043d1bda78124cd462013
-  attestations_sha256: 6f4075ed6b60fe438f312cdc572946071d2e6e4c579342d919bf7618ada48431
-  depends:
-  - python
-  - ros2-control-msgs
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-std-srvs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  license: Apache-2.0
-  run_exports: {}
-  size: 282070
-  timestamp: 1790846175745
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-2.15.2-np2py314hf807026_27.conda
   sha256: 8647d4325e3426edf569585f1e4639ac04c9b2bb1f647e48c1786ebd9a0b082e
   md5: 1305f67d8311ade97ec026ee0672d800
@@ -10054,51 +9594,6 @@ packages:
   run_exports: {}
   size: 420986
   timestamp: 1790924369767
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-resources-panda-description-3.2.1-np2py314hf807026_27.conda
-  sha256: e6b6ac045445fb7d8b6e904d950ceb3f33f62d3b2a7ea7338114f3f5e1a79b39
-  md5: 4208171412d48c4f41b4d13177e0c216
-  attestations_sha256: 00bbf302f0ef6e0c13895685521ea4ad02fbe5ee84d771677e9312ad79c33077
-  depends:
-  - python
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-ros-workspace
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  license: BSD-3-Clause
-  run_exports: {}
-  size: 3672228
-  timestamp: 1790783398581
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-resources-panda-moveit-config-3.2.1-np2py314hf807026_27.conda
-  sha256: d4c58b87850fb2106f31906186fe8deac82a4abb3e573604da105b9e4af7c20e
-  md5: 17bd9b29c24525d3bbb5ec551218cfa6
-  attestations_sha256: f5019f26edd5208d1c1256471bec5b00fa7e2c5f4a0ce683719675f8abc7b784
-  depends:
-  - python
-  - ros2-controller-manager
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-joint-state-publisher
-  - ros2-joint-state-publisher-gui
-  - ros2-moveit-resources-panda-description
-  - ros2-parallel-gripper-controller
-  - ros2-robot-state-publisher
-  - ros2-ros-workspace
-  - ros2-ros2cli-common-extensions
-  - ros2-topic-tools
-  - ros2-xacro
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - numpy >=1.25,<3
-  license: BSD-3-Clause
-  run_exports: {}
-  size: 38527
-  timestamp: 1790848297974
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-moveit-ros-2.15.2-np2py314hf807026_27.conda
   sha256: 006b586d5ab856d910da5a264afb17774a8de48b351dfa215c1a0b4ad7ee925e
   md5: 8558a861a1a779e92caea40b5817b34f
@@ -10653,37 +10148,6 @@ packages:
   run_exports: {}
   size: 199272
   timestamp: 1790813834514
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-omni-wheel-drive-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: 3ba56526cf8fc85493dda648359e5f0eaba5019b0491a2023818a37c82f5b51a
-  md5: a203473c24bc61b4ea19ee16a8fb172e
-  attestations_sha256: 0b1e5c3d4cbf4711fd43b8a89dc628006be36c4df431a6abf8245fe709805818
-  depends:
-  - eigen
-  - python
-  - ros2-control-msgs
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-geometry-msgs
-  - ros2-hardware-interface
-  - ros2-nav-msgs
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-tf2
-  - ros2-tf2-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 2083095
-  timestamp: 1790847155228
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ompl-2.0.2-py314h11d6c76_27.conda
   sha256: f24d526a613c142c13ea869eb7a4254b5f3890d85fbdf50b00e12a3ba2b859df
   md5: 1f459df6f957fa1f4881a47c2cb94a95
@@ -10790,34 +10254,6 @@ packages:
   run_exports: {}
   size: 137036
   timestamp: 1790809734487
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-parallel-gripper-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: a44999f749874e27433a978df0e56ce231db046f74637323e7429d440329493a
-  md5: 17bc17e972c5d2cd0c50fdd4872b5ace
-  attestations_sha256: f9057e7a68488ef55c0bd7a26e69d86c07eae87fd44d772c884e6b54b416f879
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-control-toolbox
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-action
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 286370
-  timestamp: 1790843283433
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pcl-conversions-2.10.0-np2py314hb0ded2c_27.conda
   sha256: 3e0d276f6b02e821c543d37920619eebd6134c190bb07c47cefea56fcbefa44a
   md5: a9a319287a60dffec3ec50f20a1a91bb
@@ -10891,35 +10327,6 @@ packages:
   run_exports: {}
   size: 112559
   timestamp: 1790805339033
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pid-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: 37f2aae7a18c6b554973b267a1203e52fdae9c16b6c00039dda2d34cacbcfed3
-  md5: a4c8db9bdbe65c3c490d18db29ebac17
-  attestations_sha256: 6b3c2fe48e4f81be79a74327255eac7df32f5d826044e0e42d46d392cbca2783
-  depends:
-  - python
-  - ros2-angles
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-control-toolbox
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-std-srvs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 804181
-  timestamp: 1790846969830
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pilz-industrial-motion-planner-2.15.2-np2py314hf807026_27.conda
   sha256: 2a49c248a3138d592c13c2c8198a3d9f65d7367898e12022fa1ae6c3b9f4f2d1
   md5: b35b48d42e741987a80730b7fb59d69b
@@ -11006,33 +10413,6 @@ packages:
   run_exports: {}
   size: 308477
   timestamp: 1790824878863
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-pose-broadcaster-6.9.0-np2py314hf807026_27.conda
-  sha256: ac68f55c82f126ffc9e848f50c30eb95057e169cf02615cef7c9698785965dc8
-  md5: e1f6d608772b71522eb8b04978f65ce9
-  attestations_sha256: 13132beaed0fadc646b283cefc66b8c266dd0b094a96cdade5ff7e7a8f7e1396
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-geometry-msgs
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-tf2-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 371712
-  timestamp: 1790845574371
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-python-qt-binding-2.5.5-np2py314hbbfc22f_27.conda
   sha256: 48355cd988e69c7361b98b8e65777ffa7fd909226284e5ea03a85b55fb06f634
   md5: 5df30685801f91fd8e19270c41f62923
@@ -11213,33 +10593,6 @@ packages:
   run_exports: {}
   size: 82520
   timestamp: 1790786933352
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-range-sensor-broadcaster-6.9.0-np2py314hf807026_27.conda
-  sha256: f0f3e3156f6a85995ba9658f7add20dd15bfe965664576fa29966e184bcc4dfd
-  md5: a47e04373f3d95da1360eb4fcafeea9b
-  attestations_sha256: 9893f1085535ffe664f6fa2f85610060402840466587c9bc9d12ec9e109caecd
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-sensor-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - numpy >=1.25,<3
-  - python_abi 3.14.* *_cp314
-  license: Apache-2.0
-  run_exports: {}
-  size: 303137
-  timestamp: 1790846776844
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-rcl-10.4.5-np2py314hf807026_27.conda
   sha256: e70cb415178c77fb291522fa703d2ac9203db46be5e07273084043835492002a
   md5: 51592186717769cc10de19a107284f25
@@ -12226,49 +11579,6 @@ packages:
   run_exports: {}
   size: 33591
   timestamp: 1790777416496
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ros2-controllers-6.9.0-np2py314hf807026_27.conda
-  sha256: 3649f450f77291a6d3bdb650776b78488935fcddeb56a7822611fceaf334e7b9
-  md5: 8dc2a80c1e8b1fb584f77dcab8cfb831
-  attestations_sha256: 13b531b666fe97e010004f92e09ab3f56165be2d466f391a0921b910462da44e
-  depends:
-  - python
-  - ros2-ackermann-steering-controller
-  - ros2-admittance-controller
-  - ros2-battery-state-broadcaster
-  - ros2-bicycle-steering-controller
-  - ros2-chained-filter-controller
-  - ros2-diff-drive-controller
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-force-torque-sensor-broadcaster
-  - ros2-forward-command-controller
-  - ros2-gpio-controllers
-  - ros2-gps-sensor-broadcaster
-  - ros2-imu-sensor-broadcaster
-  - ros2-joint-state-broadcaster
-  - ros2-joint-trajectory-controller
-  - ros2-magnetometer-broadcaster
-  - ros2-mecanum-drive-controller
-  - ros2-motion-primitives-controllers
-  - ros2-omni-wheel-drive-controller
-  - ros2-parallel-gripper-controller
-  - ros2-pid-controller
-  - ros2-pose-broadcaster
-  - ros2-range-sensor-broadcaster
-  - ros2-ros-workspace
-  - ros2-state-interfaces-broadcaster
-  - ros2-steering-controllers-library
-  - ros2-tricycle-controller
-  - ros2-tricycle-steering-controller
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 20051
-  timestamp: 1790905101425
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ros2action-0.40.9-np2py314hf807026_27.conda
   sha256: 3580639953121807aaf385ef19673d0039f843ae0a7d4c6bbc684a2ea657099e
   md5: 96af61274f847cfbbe68b66e33528cad
@@ -14683,32 +13993,6 @@ packages:
   run_exports: {}
   size: 36413
   timestamp: 1790826014540
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-state-interfaces-broadcaster-6.9.0-np2py314hf807026_27.conda
-  sha256: b1d4735bf67b048073209316b1570c242de3b13ef874f93e882b20dba9399e6f
-  md5: c1e47e971f4ca14e6f110dbf84fc8f7c
-  attestations_sha256: 0d794c96ffdb382c3c8659b01db46f51e49c7bd18f6acc456ec62ae4ba80ff87
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  license: Apache-2.0
-  run_exports: {}
-  size: 341916
-  timestamp: 1790846587814
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-statistics-msgs-2.4.5-np2py314hf807026_27.conda
   sha256: 3f0b67fc839e2d42c34719f006a31fb7b76bc15c4a3e9372ff6e473971ad5929
   md5: 6773228a774e15d242743c9f27abbbb4
@@ -14768,40 +14052,6 @@ packages:
   run_exports: {}
   size: 177500
   timestamp: 1790803008014
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-steering-controllers-library-6.9.0-np2py314hf807026_27.conda
-  sha256: 82b74779d427f91e046e86467476c7486a8d86446c8e5bb4eb9c0cf8e9aa74e9
-  md5: 486079791fb4b9dbf9c2bf1a9aa07f68
-  attestations_sha256: f044c67eb8e80e59d819cce751d4cc1ae008f62b49e8c80b4f991ec45a4f373e
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-generate-parameter-library
-  - ros2-geometry-msgs
-  - ros2-hardware-interface
-  - ros2-nav-msgs
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-rcpputils
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-std-srvs
-  - ros2-tf2
-  - ros2-tf2-geometry-msgs
-  - ros2-tf2-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - python_abi 3.14.* *_cp314
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  license: Apache-2.0
-  run_exports: {}
-  size: 961333
-  timestamp: 1790844998538
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-stereo-msgs-5.9.3-np2py314hf807026_27.conda
   sha256: f35c56951b8b6006aa84bfd30ee313c5b5d90d8cd8b389aae916d542a0b1d064
   md5: cf83892efbd10f4509dd1561267e8969
@@ -15236,51 +14486,6 @@ packages:
   run_exports: {}
   size: 59850
   timestamp: 1790811642703
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-topic-tools-1.5.0-np2py314hf807026_27.conda
-  sha256: 0a4947795c10c1e103557a8b582d0c716083264c9c8006ec152372682b7d137d
-  md5: f94ddb2afb145f2f4a53bf393bf8db47
-  attestations_sha256: 384d929890f1e8c523fc955028e5344ae1c92624a92028db8df8865188f92309
-  depends:
-  - python
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-rclcpp
-  - ros2-rclcpp-components
-  - ros2-rclpy
-  - ros2-ros-workspace
-  - ros2-ros2cli
-  - ros2-ros2topic
-  - ros2-rosidl-runtime-py
-  - ros2-topic-tools-interfaces
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  license: Apache-2.0
-  run_exports: {}
-  size: 212772
-  timestamp: 1790819767493
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-topic-tools-interfaces-1.5.0-np2py314hf807026_27.conda
-  sha256: d4c0ca79cf813487e4901c839d736bb599a15e4b39d3074b51369cb73287853d
-  md5: 14a4c1a38fd689ef34be48eafc3a445d
-  attestations_sha256: cc4b12b0bc872c63ed8de621d8ef794d8e14c858d5cffdb785fe1552fff88404
-  depends:
-  - python
-  - ros2-builtin-interfaces
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-ros-workspace
-  - ros2-rosidl-default-runtime
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  license: Apache-2.0
-  run_exports: {}
-  size: 294690
-  timestamp: 1790803418557
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-tracetools-8.10.2-np2py314hf807026_27.conda
   sha256: 27a3332abd568af415b22d5b0aec8ec1d9bbfd0a59ed27dadc8bc81e7d42d66d
   md5: e872168512c3d54573ebc9e13f0bd070
@@ -15321,66 +14526,6 @@ packages:
   run_exports: {}
   size: 155839
   timestamp: 1790812805819
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-tricycle-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: 01f9d5b8cecf3cffaf0eb31a3f13824e34dc104c0f8f5896243061d19ed5d903
-  md5: 6d8156c5d7dea3bb14b51d50f9b3efa8
-  attestations_sha256: 62b09d2a47d964d6b37c9d297d71c98cb903fcb3501ef5460282ddda19b5d1cf
-  depends:
-  - python
-  - ros2-ackermann-msgs
-  - ros2-backward-ros
-  - ros2-builtin-interfaces
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-geometry-msgs
-  - ros2-hardware-interface
-  - ros2-nav-msgs
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-rcpputils
-  - ros2-realtime-tools
-  - ros2-ros-workspace
-  - ros2-std-srvs
-  - ros2-tf2
-  - ros2-tf2-msgs
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - numpy >=1.25,<3
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  - python_abi 3.14.* *_cp314
-  license: Apache-2.0
-  run_exports: {}
-  size: 948626
-  timestamp: 1790846374415
-- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-tricycle-steering-controller-6.9.0-np2py314hf807026_27.conda
-  sha256: f1dbaffd2b6019ba21471c2bd815141f239d7340be6f903b3dfa932c1d2b8550
-  md5: 00a71096c74bf8892b2a4beec029b2c8
-  attestations_sha256: 728dd4070cc91d412ba7a1ca07990bc2fa009891a1357fa8e77b24445babce11
-  depends:
-  - python
-  - ros2-backward-ros
-  - ros2-control-msgs
-  - ros2-controller-interface
-  - ros2-distro-mutex 0.21.* lyrical_*
-  - ros2-hardware-interface
-  - ros2-pluginlib
-  - ros2-rclcpp
-  - ros2-rclcpp-lifecycle
-  - ros2-ros-workspace
-  - ros2-std-srvs
-  - ros2-steering-controllers-library
-  - vc >=14.3,<15
-  - vc14_runtime >=14.44.35208
-  - ucrt >=10.0.20348.0
-  - python_abi 3.14.* *_cp314
-  - numpy >=1.25,<3
-  - ros2-distro-mutex >=0.21.0,<0.22.0a0
-  license: Apache-2.0
-  run_exports: {}
-  size: 165015
-  timestamp: 1790849458830
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-turtlesim-1.10.9-np2py314hf8dfa29_28.conda
   sha256: 9cc90e9cbafd0942a0a76378ed81f94acbc9337ebbc4d9cb944a34444a07d805
   md5: 4f72c3aa56d5f82cb28cba305c629205
@@ -15486,6 +14631,63 @@ packages:
   run_exports: {}
   size: 84470
   timestamp: 1790801527044
+- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ur-description-4.3.1-np2py314haf9a471_27.conda
+  sha256: 9eeda34d14a11dc082fc3a6c5c93b055faf3119aab7c39611aec8f507bb7034c
+  md5: a21dbef0301dc6271cc43808a3cb064c
+  attestations_sha256: cea4e36e1189b77b92a0485a9e83888eb44a0f604933845f6aa9adb5075ed646
+  depends:
+  - python
+  - ros2-distro-mutex 0.21.* lyrical_*
+  - ros2-joint-state-publisher-gui
+  - ros2-launch
+  - ros2-launch-ros
+  - ros2-robot-state-publisher
+  - ros2-ros-workspace
+  - ros2-rviz2
+  - ros2-urdf
+  - ros2-xacro
+  - vc >=14.3,<15
+  - vc14_runtime >=14.44.35208
+  - ucrt >=10.0.20348.0
+  - numpy >=1.25,<3
+  - ros2-distro-mutex >=0.21.0,<0.22.0a0
+  - python_abi 3.14.* *_cp314
+  - urdfdom_headers >=3.0.1,<4.0a0
+  - urdfdom >=6.0.1,<7.0a0
+  license: BSD-3-Clause OR LicenseRef-Universal-Robots-A-S--Terms-and-Conditions-for-Use-of-Graphical-Documentation
+  run_exports: {}
+  size: 25394679
+  timestamp: 1790848987893
+- conda: https://prefix.dev/robostack-lyrical/win-64/ros2-ur-moveit-config-6.1.0-np2py314hf807026_27.conda
+  sha256: 69d8d39468c226e620cc684e1ddff4d8883b85f38a8debfb35a1020916cc65c7
+  md5: 04f89d12e1b2523e01f3b2b6e7a08589
+  attestations_sha256: 48f5f174b0d3a3f3b573efef65cbc5beafad45d2f0c5cca452a7e4955e5f633b
+  depends:
+  - python
+  - ros2-distro-mutex 0.21.* lyrical_*
+  - ros2-moveit-configs-utils
+  - ros2-moveit-kinematics
+  - ros2-moveit-planners
+  - ros2-moveit-planners-chomp
+  - ros2-moveit-ros-move-group
+  - ros2-moveit-ros-visualization
+  - ros2-moveit-servo
+  - ros2-moveit-simple-controller-manager
+  - ros2-rclpy
+  - ros2-ros-workspace
+  - ros2-ur-description
+  - ros2-warehouse-ros-sqlite
+  - ros2-xacro
+  - vc >=14.3,<15
+  - vc14_runtime >=14.44.35208
+  - ucrt >=10.0.20348.0
+  - python_abi 3.14.* *_cp314
+  - ros2-distro-mutex >=0.21.0,<0.22.0a0
+  - numpy >=1.25,<3
+  license: Apache-2.0
+  run_exports: {}
+  size: 46125
+  timestamp: 1790933067102
 - conda: https://prefix.dev/robostack-lyrical/win-64/ros2-urdf-2.13.2-np2py314hcdf597f_27.conda
   sha256: a12be5aeeab3cba9629bc8833034f6bad6869916e42cabe6e0735dceb6fc1937
   md5: c3e5a407481a8ae9854124f5dcae21ca
